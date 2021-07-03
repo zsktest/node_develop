@@ -1,0 +1,11 @@
+{
+  "name": "zsk_tool_bff",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "zsk_tool_bff": "bin/zsk_tool_bff.js"
+  },
+  "author": "liux_zsk",
+  "license": "ISC"
+}
