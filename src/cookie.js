@@ -21,8 +21,8 @@ exports.HandleCookie = {
     var expires = "expires="+d.toGMTString();
     if(typeof(document)!='undefined') {
       document.cookie = cname + "=" + cvalue + "; " + expires;
+    } else {
+      console.log('无法设置cookie');
     }
-    console.log('无法设置cookie')
-  }, 
-  "zsktest": 'fsdfsd'
+  }
 }
