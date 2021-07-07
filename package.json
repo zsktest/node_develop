@@ -1,13 +1,14 @@
 {
   "name": "zsk_tool_bff",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "dist/index.js",
   "bin": {
     "zsk_tool_bff": "bin/zsk_tool_bff.js"
   },
   "scripts": {
-    "build": "cd build && node build.js"
+    "build": "cd build && node build.js",
+    "publish": "npm run build && npm publish"
   },
   "files": [
     "node_developer.md",
