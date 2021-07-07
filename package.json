@@ -6,6 +6,17 @@
   "bin": {
     "zsk_tool_bff": "bin/zsk_tool_bff.js"
   },
+  "files": [
+    "node_developer.md",
+    "index.js",
+    "bin/",
+    "dist/",
+    "build/"
+  ],
   "author": "liux_zsk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7"
+  }
 }
