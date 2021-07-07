@@ -11,6 +11,7 @@ exports.HandleCookie = {
       return "";
     } else {
       console.log('无法获取cookie')
+      return '';
     }
   },
 
