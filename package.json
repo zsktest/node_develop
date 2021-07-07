@@ -1,17 +1,19 @@
 {
   "name": "zsk_tool_bff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
     "zsk_tool_bff": "bin/zsk_tool_bff.js"
   },
+  "scripts": {
+    "build": "cd build && node build.js"
+  },
   "files": [
     "node_developer.md",
     "index.js",
     "bin/",
-    "dist/",
-    "build/"
+    "dist/"
   ],
   "author": "liux_zsk",
   "license": "ISC",
