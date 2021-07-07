@@ -19,12 +19,12 @@ var webpack = require('webpack');
 var path = require('path');
 
 webpack({
-  entry: '../index.js', 
+  entry: '../index.es6', 
   output: { filename: 'index.js',path: path.resolve(__dirname, '../dist')},//默认在dist目录
   module: {
     rules: [
       {
-        test: /\.js$/, 
+        test: /\.es6$/, 
         use: {
           loader: 'babel-loader',
           options: {
