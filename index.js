@@ -1,17 +1,24 @@
-(function() {
-  console.log('my first test')
-})()
 
-function a(name) {
-  console.log('你输入的名字：', name);
+//const handleCookie = require('./src/cookie.js');
+import { HandleCookie }from './src/cookie.js'
+
+function test(name) {
+  console.log(name);
 }
 
-const b = async (name) => {
-  const c = await 1;
+const testB = (name)=>console.log(name);
+
+const testC = async ()=>{
+  let c = await 1
   console.log(c);
-  console.log('你导出的第二个名字：', name);
-} 
+}
 
-exports.Zsktest = a;
+exports.Test = test;
 
-exports.Bff = b;
+exports.TestB = testB;
+
+exports.TestC = testC;
+
+exports.HandleCookie = HandleCookie;
+
+

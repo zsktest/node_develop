@@ -1,6 +1,6 @@
 {
   "name": "zsk_tool_bff",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7"
+    "@babel/preset-env": "^7.14.7",
+    "webpack": "^5.43.0"
   }
 }
