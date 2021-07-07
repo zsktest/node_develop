@@ -1,6 +1,6 @@
 
 //const handleCookie = require('./src/cookie.js');
-import { HandleCookie }from './src/cookie.js'
+import { HandleCookie }from './src/cookie.es6'
 
 function test(name) {
   console.log(name);
