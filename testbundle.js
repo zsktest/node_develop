@@ -4,6 +4,6 @@ console.log(HandleCookie);
 
 Test("fsd");
 TestB("fdsfds");
-TestC();
+//TestC();
 
 HandleCookie.getCookie('zk');

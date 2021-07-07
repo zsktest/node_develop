@@ -19,8 +19,30 @@ var webpack = require('webpack');
 var path = require('path');
 
 webpack({
-  entry: '../index.js', output: { filename: 'index.js',path: path.resolve(__dirname, '../dist'), }  //默认在dist目录
+  entry: '../index.js', 
+  output: { filename: 'index.js',path: path.resolve(__dirname, '../dist')},//默认在dist目录
+  module: {
+    rules: [
+      {
+        test: /\.js$/, 
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: [
+              '@babel/plugin-transform-runtime'
+            ]
+          }
+        }, 
+        exclude: /(node_modules|build|dist|bin)/
+      }
+    ]
+  }, 
   // [配置对象](/configuration/)
 }, (err, stats) => {
-  console.log(stats)
+  if(err) {
+    console.log(err);
+    return ;
+  }
+  console.log(stats, 'success')
 })

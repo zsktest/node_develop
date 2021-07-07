@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "cd build && node build.js",
-    "publish": "npm run build && npm publish"
+    "publish": "npm run build && npm publish",
+    "test": "node testbundle.js"
   },
   "files": [
     "node_developer.md",
@@ -20,7 +21,9 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
     "webpack": "^5.43.0"
   }
 }
